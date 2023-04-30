@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LeitorCodigoDeBarras"
+             x:Class="LeitorCodigoDeBarras.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Label  Text="APLICATIVO PARA LER CÓDIGO DE BARRAS.#XAMARIN #CSHARP #XAML@Marcus.Vogado Instagram"
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                Margin="0,10,0,0"
+                HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="1">
+            <Button Text="SCANEAR CÓDIGO" 
+                Clicked="Button_OnClicked"
+                Margin="50,10,50,0"
+                CornerRadius="20"
+                BackgroundColor="LightBlue"
+                />
+        </StackLayout>
+
+        <StackLayout Grid.Row="2">
+            <Label Text="RESULTADO"
+                   FontSize="25"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   />
+        </StackLayout>
+        
+        <StackLayout Grid.Row="3">
+            <Label x:Name="_resultText"
+                   Text="SEU RESULTADO AQUI"
+                   TextDecorations="Underline"
+                   FontSize="15"
+                   TextColor="Green"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
